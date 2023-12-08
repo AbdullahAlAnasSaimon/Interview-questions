@@ -33,3 +33,11 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 ### Why is the Embed Tag Used in HTML?
 
 ### What is a ‘Marquee’ Tag in HTML?
+
+# JavaScript
+
+### How JavaScript Works?
+
+JavaScript is Synchronous & Single-threaded language. Everything in javascript happens inside of an execution context.
+
+Execution context is a container that defines the environment where JavaScript code is executed. The Execution context decides which code section has access to the codes variables, functions and objects.
