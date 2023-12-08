@@ -1,3 +1,6 @@
+<!-- prettier-ignore -->
+<!-- prettier-ignore-start -->
+
 "Interview-questions"
 
 # HTML
@@ -42,12 +45,14 @@ JavaScript is Synchronous & Single-threaded language. Everything in javascript h
 
 Execution context is a container that defines the environment where JavaScript code is executed. The Execution context decides which code section has access to the codes variables, functions and objects.
 
-## Figure of Execution context:
+Figure of Execution context:
+------------------------------------------------------------------
+|  Memory / Variable Environment  |  Code / Thread of Execution  |
+------------------------------------------------------------------
+| Key: Value (Pairs)              |  []                          |
+|                                 |  ______________              |
+|  a: 10                          |  []                          |
+|  fn: {...}                      |  ______________              |
+|_________________________________|______________________________|
 
-## | Memory / Variable Environment | Code / Thread of Execution |
-
-| Key: Value (Pairs) | [] |
-| | ******\_\_****** |
-| a: 10 | [] |
-| fn: {...} | ******\_\_****** |
-|****************\_****************|**************\_\_**************|
+<!-- prettier-ignore-end -->
