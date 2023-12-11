@@ -55,4 +55,6 @@ Figure of Execution context:
 |  fn: {...}                      |  ______________              |
 |_________________________________|______________________________|
 
+variables and functions are stored in memory compartment as key value pairs. In the code compartment a single command of javascript are executed in a specific order.
+
 <!-- prettier-ignore-end -->
