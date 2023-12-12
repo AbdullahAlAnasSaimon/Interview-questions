@@ -39,7 +39,7 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 
 # JavaScript
 
-### How JavaScript Works?
+### 1. How JavaScript Works?
 
 JavaScript is Synchronous & Single-threaded language. Everything in javascript happens inside of an execution context.
 
@@ -56,5 +56,10 @@ Figure of Execution context:
 |_________________________________|______________________________|
 
 variables and functions are stored in memory compartment as key value pairs. In the code compartment a single command of javascript are executed in a specific order.
+
+### 2. What is Hoisting?
+### 3. What is Temporal Dead Zone?
+### 4. What is Event Loop?
+### 5. What is scope and what scopes are available in JavaScript?
 
 <!-- prettier-ignore-end -->
