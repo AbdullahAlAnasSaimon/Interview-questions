@@ -37,7 +37,14 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 
 ### What is a ‘Marquee’ Tag in HTML?
 
+
 # JavaScript
+
+## JavaScript fundamentals
+
+### 1. What are JavaScript Data Types?
+
+## JavaScript behind the process.
 
 ### 1. How JavaScript Works?
 
@@ -57,9 +64,12 @@ Figure of Execution context:
 
 variables and functions are stored in memory compartment as key value pairs. In the code compartment a single command of javascript are executed in a specific order.
 
+
 ### 2. What is Hoisting?
 ### 3. What is Temporal Dead Zone?
 ### 4. What is Event Loop?
 ### 5. What is scope and what scopes are available in JavaScript?
+### 6. 
+
 
 <!-- prettier-ignore-end -->
