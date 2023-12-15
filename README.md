@@ -43,6 +43,14 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 ## JavaScript fundamentals
 
 ### 1. What are JavaScript Data Types?
+### 2. What is the use of isNaN function?
+### 3. Difference between “ == “ and “ === “ operators.
+### 4. Difference between var and let keyword in javascript.
+### 5. Explain Implicit Type Coercion in javascript.
+
+
+
+
 
 ## JavaScript behind the process.
 
