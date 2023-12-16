@@ -47,6 +47,12 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 ### 3. Difference between “ == “ and “ === “ operators.
 ### 4. Difference between var and let keyword in javascript.
 ### 5. Explain Implicit Type Coercion in javascript.
+### 6. Is javascript a statically typed or a dynamically typed language?
+### 7. What is NaN property in JavaScript?
+### 8. Explain passed by value and passed by reference.
+### 9. What do you mean by strict mode in javascript and characteristics of javascript strict-mode?
+### 10. Explain Higher Order Functions in javascript?
+
 
 
 
