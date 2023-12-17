@@ -52,6 +52,11 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 ### 8. Explain passed by value and passed by reference.
 ### 9. What do you mean by strict mode in javascript and characteristics of javascript strict-mode?
 ### 10. Explain Higher Order Functions in javascript?
+### 11. What is an Immediately Invoked Function in JavaScript?
+### 12. Explain “this” keyword.
+### 13. What do you mean by Self Invoking Functions?
+### 14. Explain call(), apply() and, bind() methods.
+### 15. What is currying in JavaScript?
 
 
 
