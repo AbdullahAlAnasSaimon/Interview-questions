@@ -57,6 +57,11 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 ### 13. What do you mean by Self Invoking Functions?
 ### 14. Explain call(), apply() and, bind() methods.
 ### 15. What is currying in JavaScript?
+### 16. What are some advantages of using External JavaScript?
+### 17. Explain Scope and Scope Chain in javascript.
+### 18. Explain Closures in JavaScript.
+### 19. Mention some advantages of javascript.
+### 20. What are object prototypes?
 
 
 
