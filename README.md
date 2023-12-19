@@ -62,6 +62,11 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 ### 18. Explain Closures in JavaScript.
 ### 19. Mention some advantages of javascript.
 ### 20. What are object prototypes?
+### 21. What are callbacks?
+### 22. What are the types of errors in javascript?
+### 23. What is memoization?
+### 24. What is recursion in a programming language?
+### 25. What is the use of a constructor function in javascript?
 
 
 
