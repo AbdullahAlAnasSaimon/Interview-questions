@@ -67,6 +67,11 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 ### 23. What is memoization?
 ### 24. What is recursion in a programming language?
 ### 25. What is the use of a constructor function in javascript?
+### 26. What is DOM?
+### 27. Which method is used to retrieve a character from a certain index?
+### 28. What do you mean by BOM?
+### 29. What is the distinction between client-side and server-side JavaScript?
+### 30. What are arrow functions?
 
 
 
