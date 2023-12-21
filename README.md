@@ -72,6 +72,11 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 ### 28. What do you mean by BOM?
 ### 29. What is the distinction between client-side and server-side JavaScript?
 ### 30. What are arrow functions?
+### 31. What do mean by prototype design pattern?
+### 32. Differences between declaring variables using var, let and const.
+### 33. What is the rest parameter and spread operator?
+### 34. In JavaScript, how many different methods can you make an object?
+### 35.  What is the use of promises in javascript?
 
 
 
