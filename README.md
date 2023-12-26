@@ -76,7 +76,12 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 ### 32. Differences between declaring variables using var, let and const.
 ### 33. What is the rest parameter and spread operator?
 ### 34. In JavaScript, how many different methods can you make an object?
-### 35.  What is the use of promises in javascript?
+### 35. What is the use of promises in javascript?
+### 36. What are classes in javascript?
+### 37. What are generator functions?
+### 38. Explain WeakSet in javascript.
+### 39. Why do we use callbacks?
+### 40. Explain WeakMap in javascript.
 
 
 
