@@ -82,6 +82,11 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 ### 38. Explain WeakSet in javascript.
 ### 39. Why do we use callbacks?
 ### 40. Explain WeakMap in javascript.
+### 41. What is Object Destructuring?
+### 42. Difference between prototypal and classical inheritance
+### 43. What is a Temporal Dead Zone?
+### 44. What do you mean by JavaScript Design Patterns?
+### 45. Is JavaScript a pass-by-reference or pass-by-value language?
 
 
 
