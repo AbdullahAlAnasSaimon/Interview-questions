@@ -87,6 +87,11 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 ### 43. What is a Temporal Dead Zone?
 ### 44. What do you mean by JavaScript Design Patterns?
 ### 45. Is JavaScript a pass-by-reference or pass-by-value language?
+### 46. Difference between Async/Await and Generators usage to achieve the same functionality.
+### 47. What are the primitive data types in JavaScript?
+### 48. What is the role of deferred scripts in JavaScript?
+### 49. What has to be done in order to put Lexical Scoping into practice?
+
 
 
 
