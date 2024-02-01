@@ -64,7 +64,7 @@ There are two category of data type: **1.** Primitive data type, **2.** Non-prim
 
 | Primitive    | Non-primitive |
 | -------- | ------- |
-| Primitive data types are string, number, boolean, null, undefined, symbol  | Non-primitive data types are object, array, function    |
+| Primitive data types are string, number, boolean, null, undefined, symbol  | Non-primitive data types are object, array, function |
 | Primitive data types are immutable means their value can not be changed. | Non-primitive data types are mutable means their value can be changed.    |
 | Primitive data type represents only a single value    | Not-primitive data type represents multiple with collection of elements or a key value pair    |
 | Primitive data types are simple data types  | Non-primitive data types are complex (means we can do multiple operation) data types
@@ -245,7 +245,7 @@ person.greet(); // Output: 'Hello, John!'
 
 ### What is scope in javascript?
 
-Scope refers to the visibility and accessibility of variables within a particular part of the code during runtime. It determines where variables and functions are accessible and where they are not.
+**Scope:** Scope refers to the visibility and accessibility of variables within a particular part of the code during runtime. It determines where variables and functions are accessible and where they are not.
 
 **Types of Scope in JavaScript:**
 JavaScript has two main types of scope:
@@ -287,10 +287,50 @@ if (true) {
 
 console.log(blockVar); // Error: blockVar is not defined
 ```
+### 6. Difference between var and let keyword in javascript.
+
+| Feature	| var	| let	| const |
+| ------- | ------- | -------- | ------- |
+| Scope |	Function scope  | Block scope |	Block scope |
+|Hoisting |	Hoisted to the top of the function	|Hoisted to the top of the block	| Hoisted to the top of the block. |
+|Re-declaration	| Allowed |	Not allowed |	Not allowed |
+|Re-assignment |	Allowed |	Allowed |	Not allowed (unless the value is mutable)|
+|Initialization |	Optional | Optional | Required
+|Example |	``` var x = 10; if (true) { var y = 20; } console.log(x); console.log(y);``` |	```let x = 10; if (true) { let y = 20; }	console.log(x); console.log(y);```	|```const x = 10; if (true) { const y = 20; } console.log(x); console.log(y);```|
+
+**Scope:**
+
+var: Scoped to the nearest function block.
+let: Scoped to the nearest enclosing block (commonly a statement, like a loop or an if block).
+const: Also scoped to the nearest enclosing block, just like let.
+
+**Hoisting:**
+
+var: Hoisted to the top of the function. Variables declared with var are hoisted and initialized with undefined.
+let: Hoisted to the top of the block but not initialized. You'll get a ReferenceError if you try to access the variable before the declaration.
+const: Hoisted to the top of the block but not initialized. Same behavior as let.
+
+**Re-declaration:**
+
+var: Allows re-declaration within the same scope.
+let: Does not allow re-declaration within the same scope.
+const: Does not allow re-declaration within the same scope.
+
+**Re-assignment:**
+
+var: Allows re-assignment of values.
+let: Allows re-assignment of values.
+const: Does not allow re-assignment of values, but the value itself may be mutable (e.g., objects and arrays).
+
+**Initialization:**
+
+var: Initialization is optional.
+let: Initialization is optional.
+const: Requires initialization at the time of declaration.
+
 
 ### 2. What is the use of isNaN function?
 ### 3. Difference between “ == “ and “ === “ operators.
-### 4. Difference between var and let keyword in javascript.
 ### 5. Explain Implicit Type Coercion in javascript.
 ### 6. Is javascript a statically typed or a dynamically typed language?
 ### 7. What is NaN property in JavaScript?
