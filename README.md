@@ -185,6 +185,71 @@ In JavaScript, function declarations are hoisted to the top of their containing 
 
 **First-Class Citizens:**
 In JavaScript, functions are treated as first-class citizens, meaning they can be assigned to variables, passed as arguments to other functions, and returned from other functions, just like any other data type.
+
+**Object:** In JavaScript, an object is a collection of key-value pairs where each key is a unique identifier (also known as a property name) and each value is associated with that key. Objects are one of the core data types in JavaScript and are used to represent complex data structures and entities.
+
+**Creating Objects:**
+You can create objects in JavaScript using object literal syntax {} or the Object constructor.
+
+**Object Literal Syntax:**
+
+```javascript
+let person = {
+  name: 'John',
+  age: 30,
+  city: 'New York'
+};
+```
+**Object Constructor:**
+
+```javascript
+let person = new Object();
+person.name = 'John';
+person.age = 30;
+person.city = 'New York';
+```
+**Accessing Object Properties:**
+You can access properties of an object using dot notation (.) or bracket notation ([]).
+
+```javascript
+
+console.log(person.name); // Output: 'John'
+console.log(person['age']); // Output: 30
+```
+**Adding and Modifying Properties:**
+You can add new properties or modify existing properties of an object after its creation.
+
+```javascript
+person.job = 'Engineer'; // Adding a new property
+person.age = 35; // Modifying an existing property
+```
+**Nested Objects:**
+Objects can contain other objects as property values, allowing you to create nested or hierarchical data structures.
+
+```javascript
+
+let car = {
+  make: 'Toyota',
+  model: 'Camry',
+  year: 2020,
+  owner: {
+    name: 'Alice',
+    age: 25
+  }
+};
+```
+**Object Methods:**
+In JavaScript, functions can also be properties of objects. When a function is a property of an object, it is called a method.
+
+```javascript
+let person = {
+  name: 'John',
+  greet: function() {
+    console.log('Hello, ' + this.name + '!');
+  }
+};
+person.greet(); // Output: 'Hello, John!'
+```
  
 ### 2. What is the use of isNaN function?
 ### 3. Difference between “ == “ and “ === “ operators.
