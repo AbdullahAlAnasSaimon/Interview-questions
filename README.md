@@ -48,9 +48,9 @@ Javascript is a programming language that is used for converting static web page
 
 ### 2. What are JavaScript Data Types?
 
-There are two category for data type: 1. Primitive data type, 2. Non-primitive/Reference data type
+There are two category of data type: **1.** Primitive data type, **2.** Non-primitive/Reference data type
 
-Primitive data type: Primitive data types are the most basic data types. Primitive data types are immutable and represents a single value that have no special capabilities, they are also known as predefined types.
+**Primitive data type:** Primitive data types are the most basic data types. Primitive data types are immutable and represents a single value that have no special capabilities, they are also known as predefined types.
 1. String
 2. Number
 3. Boolean
@@ -59,7 +59,7 @@ Primitive data type: Primitive data types are the most basic data types. Primiti
 6. BigInt
 7. Symbol
 
-Non-primitive/Reference data type:
+**Non-primitive/Reference data type:** Non-primitive data types are complex and mutable data types. They store with multiple values in a variable.
 1. Object
 2. Array
 
@@ -71,6 +71,68 @@ Non-primitive/Reference data type:
 | Primitive data types are immutable means their value can not be changed. | Non-primitive data types are mutable means their value can be changed.    |
 | Primitive data type represents only a single value    | Not-primitive data type represents multiple with collection of elements or a key value pair    |
 | Primitive data types are simple data types  | Non-primitive data types are complex (means we can do multiple operation) data types
+
+### 4. What are arrays, function and objects?
+
+**Array:** In JavaScript, an array is a special type of object used to store multiple values in a single variable. Unlike many other programming languages, JavaScript arrays are dynamic, meaning they can grow or shrink in size as needed. Arrays in JavaScript are zero-indexed, meaning the first element is at index 0, the second element is at index 1, and so on.
+
+**Creating Arrays:**
+We can create arrays in JavaScript using array literal syntax ([]) or the Array constructor.
+
+```javascript
+
+// Array literal syntax
+let fruits = ['apple', 'banana', 'orange'];
+
+// Array constructor
+let cars = new Array('Toyota', 'Honda', 'Ford');
+```
+**Accessing Elements:**
+We can access elements in an array using square brackets ([]) notation with the index of the element.
+
+```javascript
+console.log(fruits[0]); // Output: 'apple'
+console.log(cars[1]);   // Output: 'Honda'
+```
+**Modifying Elements:**
+We can modify elements in an array by assigning a new value to a specific index.
+
+```javascript
+
+fruits[2] = 'grape';
+console.log(fruits); // Output: ['apple', 'banana', 'grape']
+```
+**Array Methods:**
+JavaScript provides a variety of methods to manipulate arrays, such as **push(), pop(), shift(), unshift(), splice(), slice(), concat(), indexOf(), forEach(), map(), filter(), reduce()**, and many more.
+
+```javascript
+fruits.push('kiwi'); // Add 'kiwi' to the end of the array
+console.log(fruits); // Output: ['apple', 'banana', 'grape', 'kiwi']
+
+fruits.pop(); // Remove the last element from the array
+console.log(fruits); // Output: ['apple', 'banana', 'grape']
+```
+**Array Length:**
+We can determine the length of an array using the length property.
+
+```javascript
+console.log(fruits.length); // Output: 3
+```
+**Iterating Over Arrays:**
+We can iterate over arrays using loops such as for loop or array methods like forEach(), map(), filter(), etc.
+
+```javascript
+for (let i = 0; i < fruits.length; i++) {
+  console.log(fruits[i]);
+}
+
+fruits.forEach(function(fruit) {
+  console.log(fruit);
+});
+```
+
+
+Function: 
  
 ### 2. What is the use of isNaN function?
 ### 3. Difference between “ == “ and “ === “ operators.
