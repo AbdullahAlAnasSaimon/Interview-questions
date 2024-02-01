@@ -42,15 +42,15 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 
 ## JavaScript fundamentals
 
-### What is Javascript?
+### 1. What is Javascript?
 
 Javascript is a programming language that is used for converting static web pages to interactive and dynamic.
 
-### 1. What are JavaScript Data Types?
+### 2. What are JavaScript Data Types?
 
 There are two category for data type: 1. Primitive data type, 2. Non-primitive/Reference data type
 
-Primitive data type: Primitive data types are the most basic data types. Primitive data types represents a single value that have no special capabilities, they are also known as predefined types.
+Primitive data type: Primitive data types are the most basic data types. Primitive data types are immutable and represents a single value that have no special capabilities, they are also known as predefined types.
 1. String
 2. Number
 3. Boolean
@@ -62,6 +62,15 @@ Primitive data type: Primitive data types are the most basic data types. Primiti
 Non-primitive/Reference data type:
 1. Object
 2. Array
+
+### 3. What is the difference between primitive and non-primitive data types?
+
+| Primitive    | Non-primitive |
+| -------- | ------- |
+| Primitive data types are string, number, boolean, null, undefined, symbol  | Non-primitive data types are object, array, function    |
+| Primitive data types are immutable means their value can not be changed. | Non-primitive data types are mutable means their value can be changed.    |
+| Primitive data type represents only a single value    | Not-primitive data type represents multiple with collection of elements or a key value pair    |
+| Primitive data types are simple data types  | Non-primitive data types are complex (means we can do multiple operation) data types
  
 ### 2. What is the use of isNaN function?
 ### 3. Difference between “ == “ and “ === “ operators.
