@@ -42,7 +42,27 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 
 ## JavaScript fundamentals
 
+### What is Javascript?
+
+Javascript is a programming language that is used for converting static web pages to interactive and dynamic.
+
 ### 1. What are JavaScript Data Types?
+
+There are two category for data type: 1. Primitive data type, 2. Non-primitive/Reference data type
+
+Primitive data type: Primitive data types are the most basic data types. Primitive data types represents a single value that have no special capabilities, they are also known as predefined types.
+1. String
+2. Number
+3. Boolean
+4. Null
+5. Undefined
+6. BigInt
+7. Symbol
+
+Non-primitive/Reference data type:
+1. Object
+2. Array
+ 
 ### 2. What is the use of isNaN function?
 ### 3. Difference between “ == “ and “ === “ operators.
 ### 4. Difference between var and let keyword in javascript.
