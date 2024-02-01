@@ -1,7 +1,4 @@
-<!-- prettier-ignore -->
-<!-- prettier-ignore-start -->
-
-"Interview-questions"
+**Interview-questions**
 
 # HTML
 
@@ -44,13 +41,13 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 
 ### 1. What is Javascript?
 
-Javascript is a programming language that is used for converting static web pages to interactive and dynamic.
+Javascript is a programming language that is used for converting static web pages to interactive and dynamic. 
 
 ### 2. What are JavaScript Data Types?
 
 There are two category of data type: **1.** Primitive data type, **2.** Non-primitive/Reference data type
 
-**Primitive data type:** Primitive data types are the most basic data types. Primitive data types are immutable and represents a single value that have no special capabilities, they are also known as predefined types.
+**Primitive data type:** Primitive data types are the most basic data types. Primitive data types are immutable and represents a single value. 
 1. String
 2. Number
 3. Boolean
@@ -59,7 +56,7 @@ There are two category of data type: **1.** Primitive data type, **2.** Non-prim
 6. BigInt
 7. Symbol
 
-**Non-primitive/Reference data type:** Non-primitive data types are complex and mutable data types. They store with multiple values in a variable.
+**Non-primitive/Reference data type:** Non-primitive data types are complex and mutable data types. They store collection of values in a variable.
 1. Object
 2. Array
 
@@ -74,7 +71,7 @@ There are two category of data type: **1.** Primitive data type, **2.** Non-prim
 
 ### 4. What are arrays, function and objects?
 
-**Array:** In JavaScript, an array is a special type of object used to store multiple values in a single variable. Unlike many other programming languages, JavaScript arrays are dynamic, meaning they can grow or shrink in size as needed. Arrays in JavaScript are zero-indexed, meaning the first element is at index 0, the second element is at index 1, and so on.
+**Array:** An array is a special type of object used to store multiple values in a single variable. Unlike many other programming languages, JavaScript arrays are dynamic, meaning they can grow or shrink in size as needed. Arrays in JavaScript are zero-indexed, meaning the first element is at index 0, the second element is at index 1, and so on.
 
 **Creating Arrays:**
 We can create arrays in JavaScript using array literal syntax ([]) or the Array constructor.
@@ -131,8 +128,7 @@ fruits.forEach(function(fruit) {
 });
 ```
 
-
-**Function:** In JavaScript, a function is a block of reusable code that performs a specific task or calculates a value. Functions are one of the fundamental building blocks of JavaScript programming, allowing you to encapsulate logic, organize code, and promote reusability.
+**Function:** A function is a block of code that performs a specific task and return a value. Functions are one of the fundamental building blocks of JavaScript programming, allowing us to encapsulate logic, organize code, and promote reusability.
 
 **Creating Functions:**
 You can define functions in JavaScript using either function declaration syntax or function expression syntax.
@@ -155,7 +151,6 @@ let greet = function(name) {
 Functions can accept input parameters (arguments) that are specified within the parentheses following the function name. These parameters represent values that can be passed to the function when it is called.
 
 ```javascript
-
 function add(a, b) {
   return a + b;
 }
@@ -171,7 +166,6 @@ let result = add(3, 5); // result is assigned the value 8
 Functions can optionally return a value using the return statement. This allows the function to calculate a result or perform some operation and then pass that result back to the calling code.
 
 ```javascript
-
 function multiply(x, y) {
   return x * y;
 }
@@ -186,7 +180,7 @@ In JavaScript, function declarations are hoisted to the top of their containing 
 **First-Class Citizens:**
 In JavaScript, functions are treated as first-class citizens, meaning they can be assigned to variables, passed as arguments to other functions, and returned from other functions, just like any other data type.
 
-**Object:** In JavaScript, an object is a collection of key-value pairs where each key is a unique identifier (also known as a property name) and each value is associated with that key. Objects are one of the core data types in JavaScript and are used to represent complex data structures and entities.
+**Object:** An object is a collection of key-value pairs where each key is a unique identifier (also known as a property name) and each value is associated with that key. Objects are one of the core data types in JavaScript and are used to represent complex data structures and entities.
 
 **Creating Objects:**
 You can create objects in JavaScript using object literal syntax {} or the Object constructor.
@@ -212,7 +206,6 @@ person.city = 'New York';
 You can access properties of an object using dot notation (.) or bracket notation ([]).
 
 ```javascript
-
 console.log(person.name); // Output: 'John'
 console.log(person['age']); // Output: 30
 ```
@@ -227,7 +220,6 @@ person.age = 35; // Modifying an existing property
 Objects can contain other objects as property values, allowing you to create nested or hierarchical data structures.
 
 ```javascript
-
 let car = {
   make: 'Toyota',
   model: 'Camry',
@@ -250,7 +242,52 @@ let person = {
 };
 person.greet(); // Output: 'Hello, John!'
 ```
- 
+
+### What is scope in javascript?
+
+Scope refers to the visibility and accessibility of variables within a particular part of the code during runtime. It determines where variables and functions are accessible and where they are not.
+
+**Types of Scope in JavaScript:**
+JavaScript has two main types of scope:
+
+**Global Scope:**
+Variables declared outside of any function or block have global scope.
+Global variables are accessible from anywhere in the code, including inside functions and blocks.
+They are accessible throughout the entire script, but they can be shadowed by local variables.
+
+```javascript
+let globalVar = 'I am global';
+
+function foo() {
+  console.log(globalVar); // Accessible
+}
+```
+**Local Scope:**
+Variables declared inside a function or block have local scope.
+Local variables are only accessible within the function or block in which they are declared.
+They are not accessible outside of the function or block.
+
+```javascript
+function bar() {
+  let localVar = 'I am local';
+  console.log(localVar); // Accessible
+}
+
+console.log(localVar); // Error: localVar is not defined
+```
+
+**Block Scope:**
+Prior to ES6 (ECMAScript 2015), JavaScript only had function scope. With the introduction of let and const keywords in ES6, block scope was introduced. Variables declared with let and const have block scope, meaning they are only accessible within the block in which they are declared.
+
+```javascript
+if (true) {
+  let blockVar = 'I am block scoped';
+  console.log(blockVar); // Accessible
+}
+
+console.log(blockVar); // Error: blockVar is not defined
+```
+
 ### 2. What is the use of isNaN function?
 ### 3. Difference between “ == “ and “ === “ operators.
 ### 4. Difference between var and let keyword in javascript.
