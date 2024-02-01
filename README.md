@@ -132,7 +132,59 @@ fruits.forEach(function(fruit) {
 ```
 
 
-Function: 
+**Function:** In JavaScript, a function is a block of reusable code that performs a specific task or calculates a value. Functions are one of the fundamental building blocks of JavaScript programming, allowing you to encapsulate logic, organize code, and promote reusability.
+
+**Creating Functions:**
+You can define functions in JavaScript using either function declaration syntax or function expression syntax.
+
+**Function Declaration:**
+
+```javascript
+function greet(name) {
+  console.log('Hello, ' + name + '!');
+}
+```
+**Function Expression (Anonymous Function):**
+
+```javascript
+let greet = function(name) {
+  console.log('Hello, ' + name + '!');
+};
+```
+**Function Parameters:**
+Functions can accept input parameters (arguments) that are specified within the parentheses following the function name. These parameters represent values that can be passed to the function when it is called.
+
+```javascript
+
+function add(a, b) {
+  return a + b;
+}
+```
+**Calling Functions:**
+To execute a function and perform its defined task, you need to call (invoke) it by using its name followed by parentheses. If the function expects parameters, you provide values for those parameters inside the parentheses.
+
+```javascript
+greet('Alice'); // Output: Hello, Alice!
+let result = add(3, 5); // result is assigned the value 8
+```
+**Returning Values:**
+Functions can optionally return a value using the return statement. This allows the function to calculate a result or perform some operation and then pass that result back to the calling code.
+
+```javascript
+
+function multiply(x, y) {
+  return x * y;
+}
+let product = multiply(2, 4); // product is assigned the value 8
+```
+**Function Scope:**
+JavaScript functions have their own scope, meaning that variables declared inside a function are local to that function and are not accessible from outside the function (unless explicitly returned).
+
+**Function Hoisting:**
+In JavaScript, function declarations are hoisted to the top of their containing scope, meaning you can call a function before it is declared in the code.
+
+**First-Class Citizens:**
+In JavaScript, functions are treated as first-class citizens, meaning they can be assigned to variables, passed as arguments to other functions, and returned from other functions, just like any other data type.
  
 ### 2. What is the use of isNaN function?
 ### 3. Difference between “ == “ and “ === “ operators.
