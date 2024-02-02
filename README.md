@@ -328,6 +328,59 @@ var: Initialization is optional.
 let: Initialization is optional.
 const: Requires initialization at the time of declaration.
 
+### 7. What is loop? What are loops in javascript?
+
+A loop is a basic programming concept that allows us to execute a block of code repeatedly based on a condition. It's enable automation of repetitive tasks.
+
+JavaScript supports several types of loops:
+
+**for Loop:**
+The for loop is used when you know the number of iterations in advance. It consists of three parts: initialization, condition, and iteration.
+
+```javascript
+for (let i = 0; i < 5; i++) {
+  console.log(i);
+}
+```
+**while Loop:**
+The while loop is used when the number of iterations is not known in advance, and the loop continues as long as the specified condition evaluates to true.
+
+```javascript
+let i = 0;
+while (i < 5) {
+  console.log(i);
+  i++;
+}
+```
+**do...while Loop:**
+The do...while loop is similar to the while loop, but it always executes the block of code at least once, even if the condition evaluates to false initially.
+
+```javascript
+let i = 0;
+do {
+  console.log(i);
+  i++;
+} while (i < 5);
+```
+**for...in Loop:**
+The for...in loop iterates over the enumerable properties of an object, including its prototype chain. It's commonly used to iterate over object keys.
+
+```javascript
+const person = { name: 'John', age: 30 };
+for (const key in person) {
+  console.log(key + ': ' + person[key]);
+}
+```
+**for...of Loop:**
+The for...of loop is used to iterate over iterable objects such as arrays, strings, and other iterable objects introduced in ES6.
+
+```javascript
+const colors = ['red', 'green', 'blue'];
+for (const color of colors) {
+  console.log(color);
+}
+```
+
 
 ### 2. What is the use of isNaN function?
 ### 3. Difference between “ == “ and “ === “ operators.
