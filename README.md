@@ -343,7 +343,7 @@ for (let i = 0; i < 5; i++) {
 }
 ```
 **while Loop:**
-The while loop is used when the number of iterations is not known in advance, and the loop continues as long as the specified condition evaluates to true.
+The while loop is used when the number of iterations is not known in advance, and the loop continues as long as the specified condition is true.
 
 ```javascript
 let i = 0;
@@ -381,9 +381,32 @@ for (const color of colors) {
 }
 ```
 
+### 8. Difference between “ == “ and “ === “ operators.
+
+Both == (equality operator) and === (strict equality operator) are used for comparison, but they have different behaviors:
+
+**== (Equality Operator):**
+
+The == operator checks for equality after performing type coercion. If the operands have different types, JavaScript will attempt to convert them to the same type before making the comparison.
+Example: 0 == false evaluates to true because false is converted to 0 during comparison.
+
+**=== (Strict Equality Operator):**
+
+The === operator checks for strict equality without performing type coercion. It only returns true if the operands are of the same type and have the same value.
+Example: 0 === false evaluates to false because 0 and false are of different types.
+
+**Here's a comparison table to illustrate the differences:**
+
+| Operator |	Example |	Result with == |	Result with === |
+| ------- | ------- | ------- | ------- |
+|== |	0 == false | true |	false |
+|=== | 0 === false | false | false |
+|==|	"1" == 1|	true|	true|
+|===|	"1" === 1|	false|	false|
+|==	|null == undefined|	true|	false|
+|===|	null === undefined|	false|	false|
 
 ### 2. What is the use of isNaN function?
-### 3. Difference between “ == “ and “ === “ operators.
 ### 5. Explain Implicit Type Coercion in javascript.
 ### 6. Is javascript a statically typed or a dynamically typed language?
 ### 7. What is NaN property in JavaScript?
@@ -439,24 +462,6 @@ for (const color of colors) {
 ## JavaScript behind the process.
 
 ### 1. How JavaScript Works?
-
-JavaScript is Synchronous & Single-threaded language. Everything in javascript happens inside of an execution context.
-
-Execution context is a container that defines the environment where JavaScript code is executed. The Execution context decides which code section has access to the codes variables, functions and objects.
-
-Figure of Execution context:
-------------------------------------------------------------------
-|  Memory / Variable Environment  |  Code / Thread of Execution  |
-------------------------------------------------------------------
-| Key: Value (Pairs)              |  []                          |
-|                                 |  ______________              |
-|  a: 10                          |  []                          |
-|  fn: {...}                      |  ______________              |
-|_________________________________|______________________________|
-
-variables and functions are stored in memory compartment as key value pairs. In the code compartment a single command of javascript are executed in a specific order.
-
-
 ### 2. What is Hoisting?
 ### 3. What is Temporal Dead Zone?
 ### 4. What is Event Loop?
