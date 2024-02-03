@@ -39,6 +39,8 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 
 ## JavaScript fundamentals
 
+=> JS-01
+
 ### 1. What is Javascript?
 
 Javascript is a programming language that is used for converting static web pages to interactive and dynamic. 
@@ -243,7 +245,7 @@ let person = {
 person.greet(); // Output: 'Hello, John!'
 ```
 
-### What is scope in javascript?
+### 5. What is scope in javascript?
 
 **Scope:** Scope refers to the visibility and accessibility of variables within a particular part of the code during runtime. It determines where variables and functions are accessible and where they are not.
 
@@ -251,9 +253,7 @@ person.greet(); // Output: 'Hello, John!'
 JavaScript has two main types of scope:
 
 **Global Scope:**
-Variables declared outside of any function or block have global scope.
-Global variables are accessible from anywhere in the code, including inside functions and blocks.
-They are accessible throughout the entire script, but they can be shadowed by local variables.
+Variables declared outside of any function or block have global scope. Global variables are accessible from anywhere in the code, including inside functions and blocks. They are accessible throughout the entire script, but they can be shadowed by local variables.
 
 ```javascript
 let globalVar = 'I am global';
@@ -263,9 +263,7 @@ function foo() {
 }
 ```
 **Local Scope:**
-Variables declared inside a function or block have local scope.
-Local variables are only accessible within the function or block in which they are declared.
-They are not accessible outside of the function or block.
+Variables declared inside a function or block have local scope. Local variables are only accessible within the function or block in which they are declared. They are not accessible outside of the function or block.
 
 ```javascript
 function bar() {
@@ -388,23 +386,46 @@ Both == (equality operator) and === (strict equality operator) are used for comp
 **== (Equality Operator):**
 
 The == operator checks for equality after performing type coercion. If the operands have different types, JavaScript will attempt to convert them to the same type before making the comparison.
+
 Example: 0 == false evaluates to true because false is converted to 0 during comparison.
 
 **=== (Strict Equality Operator):**
 
 The === operator checks for strict equality without performing type coercion. It only returns true if the operands are of the same type and have the same value.
+
 Example: 0 === false evaluates to false because 0 and false are of different types.
 
 **Here's a comparison table to illustrate the differences:**
 
-| Operator |	Example |	Result with == |	Result with === |
-| ------- | ------- | ------- | ------- |
-|== |	0 == false | true |	false |
-|=== | 0 === false | false | false |
-|==|	"1" == 1|	true|	true|
-|===|	"1" === 1|	false|	false|
-|==	|null == undefined|	true|	false|
-|===|	null === undefined|	false|	false|
+|	Example |	Result |
+| ------- | ------- |
+|	0 == false | true |
+| 0 === false | false |
+|	"1" == 1|	true|	
+|	"1" === 1|	false|
+|null == undefined|	true|
+|	null === undefined|	false|
+
+=> Js-02
+
+### 1. What are the types of functions? What are named and anonymous functions?
+### 2. What is function expression?
+### 3. What are arrow function?
+### 4. What are callback functions?
+### 5. When to use callback function in real application?
+### 6. What is the use of event handling?
+### 7. What is higher order functions?
+
+=> Js-03
+
+### 1. What are asynchronous operations?
+### 2. What are promise?
+### 3. How to implement promise
+### 4. When to use promises in real application?
+### 5. What are classes and objects?
+### 6. What is the purpose of this keyword?
+### 7. What is hoisting?
+
 
 ### 2. What is the use of isNaN function?
 ### 5. Explain Implicit Type Coercion in javascript.
