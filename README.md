@@ -43,9 +43,11 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 
 ### 1. What is Javascript?
 
-Javascript is a programming language that is used for converting static web pages to interactive and dynamic. 
+Javascript is a programming language that is used for converting static web pages to interactive and dynamic web page. It's mainly use in the web development both frontend and server section.
 
 ### 2. What are JavaScript Data Types?
+
+Data types are classifications of data that determine the type of values that can be assigned to variables, passed as arguments, and returned by functions. 
 
 There are two category of data type: **1.** Primitive data type, **2.** Non-primitive/Reference data type
 
@@ -130,7 +132,7 @@ fruits.forEach(function(fruit) {
 });
 ```
 
-**Function:** A function is a block of code that performs a specific task and return a value. Functions are one of the fundamental building blocks of JavaScript programming, allowing us to encapsulate logic, organize code, and promote reusability.
+**Function:** Functions are one of the fundamental building blocks of JavaScript programming, A function is a block of code that performs a specific task, we can take input values as parameter and return a value.
 
 **Creating Functions:**
 You can define functions in JavaScript using either function declaration syntax or function expression syntax.
@@ -385,13 +387,13 @@ Both == (equality operator) and === (strict equality operator) are used for comp
 
 **== (Equality Operator):**
 
-The == operator checks for equality after performing type coercion. If the operands have different types, JavaScript will attempt to convert them to the same type before making the comparison.
+The == operator checks for equality after performing type conversion. If the operands have different types, JavaScript will attempt to convert them to the same type before making the comparison.
 
 Example: 0 == false evaluates to true because false is converted to 0 during comparison.
 
 **=== (Strict Equality Operator):**
 
-The === operator checks for strict equality without performing type coercion. It only returns true if the operands are of the same type and have the same value.
+The === operator checks for strict equality without performing type conversion. It only returns true if the operands are of the same type and have the same value.
 
 Example: 0 === false evaluates to false because 0 and false are of different types.
 
@@ -408,7 +410,87 @@ Example: 0 === false evaluates to false because 0 and false are of different typ
 
 => Js-02
 
-### 1. What are the types of functions? What are named and anonymous functions?
+### 1. What are the types of functions?
+
+**Named Functions:**
+
+Named functions are functions that have a name identifier.
+They can be defined using the function keyword followed by the function name.
+
+```javascript
+Copy code
+function add(x, y) {
+  return x + y;
+}
+```
+**Anonymous Functions:**
+
+Anonymous functions are functions that do not have a name identifier.
+They are often used as inline functions or as arguments to other functions.
+
+```javascript
+Copy code
+const multiply = function(x, y) {
+  return x * y;
+};
+```
+**Arrow Functions (ES6):**
+
+Arrow functions are a concise way to write functions introduced in ES6.
+They have a shorter syntax compared to traditional named and anonymous functions.
+
+```javascript
+Copy code
+const subtract = (x, y) => x - y;
+```
+
+**Function Expressions:**
+
+Function expressions are functions that are assigned to variables or passed as arguments to other functions.
+They can be named or anonymous.
+
+```javascript
+Copy code
+const greet = function(name) {
+  console.log(`Hello, ${name}!`);
+};
+```
+
+**Function Declarations:**
+
+Function declarations are statements that define named functions. They are hoisted to the top of their containing scope, allowing them to be called before they are defined.
+
+```javascript
+Copy code
+function divide(x, y) {
+  return x / y;
+}
+```
+**Immediately Invoked Function Expressions (IIFE):**
+
+IIFEs are functions that are defined and invoked immediately.
+They are often used to create a new scope or to encapsulate code.
+
+```javascript
+Copy code
+(function() {
+  console.log('This is an IIFE');
+})();
+```
+
+**Generator Functions (ES6):**
+
+Generator functions are special types of functions that can pause and resume their execution.
+They are defined using the function* syntax and contain one or more yield expressions.
+
+```javascript
+function* generateSequence() {
+  yield 1;
+  yield 2;
+  yield 3;
+}
+```
+
 ### 2. What is function expression?
 ### 3. What are arrow function?
 ### 4. What are callback functions?
