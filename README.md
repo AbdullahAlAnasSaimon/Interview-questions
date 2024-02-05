@@ -657,6 +657,38 @@ Implementing accessible features such as keyboard navigation and screen reader s
 
 ### 7. What is higher order functions?
 
+A higher-order function is a concept in programming languages, particularly in functional programming paradigms like JavaScript, where functions can accept other functions as arguments or return functions as results. In simpler terms, a higher-order function is a function that operates on other functions by taking them as arguments or returning them.
+
+**Here are the key characteristics of higher-order functions:**
+
+**Accepting Functions as Arguments:**
+
+A higher-order function can accept one or more functions as arguments. These functions are often referred to as callback functions because they are called back by the higher-order function during its execution.
+
+**Returning Functions as Results:**
+
+A higher-order function can also return a new function as its result. This allows for the creation of functions on the fly, customized based on the arguments passed to the higher-order function.
+Higher-order functions provide a powerful mechanism for abstraction, code reusability, and composability in programming. They enable developers to write more concise and expressive code by encapsulating common patterns and behaviors into reusable functions.
+
+**Here's a simple example of a higher-order function in JavaScript:**
+
+```javascript
+Copy code
+// Higher-order function that takes a function as an argument
+function greet(name, callback) {
+  return callback(name);
+}
+
+// Callback function passed to the greet function
+function sayHello(name) {
+  return `Hello, ${name}!`;
+}
+
+// Calling the higher-order function with the callback function
+const message = greet('John', sayHello);
+console.log(message); // Output: Hello, John!
+```
+
 => Js-03
 
 ### 1. What are asynchronous operations?
