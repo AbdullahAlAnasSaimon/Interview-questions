@@ -564,8 +564,59 @@ obj.greet(); // Output: Hello, John!
 
 Arrow functions cannot be used as constructors to create objects with the **new** keyword. They lack the **[[Construct]]** method and will throw an error if attempted to be called with new.
 
-### 4. What are callback functions?
+### 4. What is callback functions?
+
+A callback function in JavaScript is a function that is passed as an argument to another function and is executed after a particular event or task completes. The primary purpose of a callback function is to ensure that certain code runs only after other code has finished execution, typically asynchronous operations such as fetching data from a server, reading files, or handling user input.
+
+**Here's a simple example to illustrate the concept of a callback function:**
+
+```javascript
+Copy code
+function fetchData(callback) {
+  // Simulate fetching data asynchronously (e.g., from a server)
+  setTimeout(() => {
+    const data = 'Some data fetched from server';
+    callback(data); // Invoke the callback function with the fetched data
+  }, 2000);
+}
+
+// Define a callback function to handle the fetched data
+function handleData(data) {
+  console.log('Data received:', data);
+}
+
+// Call the fetchData function and pass the handleData function as a callback
+fetchData(handleData);
+```
+
 ### 5. When to use callback function in real application?
+
+Callback functions are commonly used in real applications whenever you need to perform:
+
+**Asynchronous Operations:**
+
+When making HTTP requests to fetch data from a server.
+When reading/writing files asynchronously.
+When performing database operations asynchronously.
+
+**Event Handling:**
+
+When handling user interactions such as button clicks, form submissions, or mouse movements.
+When handling events in web development frameworks/libraries like React, Vue.js, or Angular.
+
+**Timeouts and Intervals:**
+
+When using setTimeout or setInterval functions to execute code after a specified delay or at regular intervals.
+For animations or periodic updates on web pages.
+
+**Callbacks in Promises:**
+
+When using promises, callbacks are often used to handle asynchronous tasks in the then method or error handling in the catch method.
+
+**Custom Functions:**
+
+When defining custom functions that accept callbacks to provide flexibility and customization.
+
 ### 6. What is the use of event handling?
 ### 7. What is higher order functions?
 
