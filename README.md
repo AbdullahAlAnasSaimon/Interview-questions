@@ -618,6 +618,43 @@ When using promises, callbacks are often used to handle asynchronous tasks in th
 When defining custom functions that accept callbacks to provide flexibility and customization.
 
 ### 6. What is the use of event handling?
+
+Event handling in programming, particularly in the context of web development, refers to the process of responding to user interactions or system events that occur within an application or on a web page. Event handling allows developers to create interactive and dynamic user interfaces by executing specific actions or functions in response to various events.
+
+**Here are some common uses of event handling in web development:**
+
+**User Interactions:**
+
+Handling user interactions such as mouse clicks, keyboard inputs, mouse movements, and touch events.
+Responding to form submissions, button clicks, checkbox changes, and dropdown selections.
+
+**Browser Events:**
+
+Reacting to browser-related events such as page load, window resize, page scroll, and focus/blur events.
+Detecting changes in the browser's state, such as URL changes (history navigation) using the **popstate** event.
+
+**Asynchronous Operations:**
+
+Triggering actions or functions after asynchronous operations complete, such as fetching data from a server using AJAX requests.
+Handling responses from server-side events or notifications in real-time applications using WebSockets or server-sent events (SSE).
+
+**User Interface (UI) Updates:**
+
+Dynamically updating the user interface in response to user interactions or changes in application state.
+Modifying the appearance or behavior of UI elements based on user actions or system events.
+
+**Error Handling:**
+
+Capturing and handling errors that occur during user interactions or asynchronous operations, providing feedback to users when errors occur.
+
+**Custom Events:**
+
+Creating and dispatching custom events to communicate between different parts of an application or between components in a framework/library.
+
+**Accessibility:**
+
+Implementing accessible features such as keyboard navigation and screen reader support to ensure that all users can interact with the application effectively.
+
 ### 7. What is higher order functions?
 
 => Js-03
