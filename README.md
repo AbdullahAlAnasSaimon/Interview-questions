@@ -492,7 +492,78 @@ function* generateSequence() {
 ```
 
 ### 2. What is function expression?
-### 3. What are arrow function?
+
+A function expression in JavaScript is a way to define a function as part of an expression, rather than as a function declaration. In other words, it's when a function is assigned as a value to a variable or passed as an argument to another function.
+
+**Here's an example of a function expression:**
+
+```javascript
+Copy code
+const greet = function(name) {
+  console.log(`Hello, ${name}!`);
+};
+```
+
+### 3. What is arrow function?
+
+An arrow function is a concise way to write functions in JavaScript introduced in ES6 (ECMAScript 2015). It provides a shorter syntax compared to traditional function expressions and has some differences in behavior. Here's the basic syntax of an arrow function:
+
+```javascript
+Copy code
+const functionName = (parameters) => {
+  // Function body
+};
+```
+**Or for single parameter and single statement:**
+
+```javascript
+Copy code
+const functionName = parameter => statement;
+And for multiple parameters:
+```
+
+```javascript
+Copy code
+const functionName = (param1, param2) => {
+  // Function body
+};
+```
+**Key features of arrow functions include:**
+
+**Concise Syntax:**
+
+Arrow functions have a shorter syntax compared to traditional function expressions, making them easier to read and write.
+
+**Implicit Return:**
+
+If the function body consists of a single expression, the curly braces {} and return keyword can be omitted. The value of the expression will automatically be returned.
+
+```javascript
+Copy code
+const double = num => num * 2;
+```
+
+**No "this" Binding:**
+
+Arrow functions do not have their own this context. Instead, they inherit this from the surrounding lexical scope (the context in which they are defined). This behavior can be advantageous in certain scenarios, especially when dealing with nested functions and event handlers.
+
+```javascript
+Copy code
+const obj = {
+  name: 'John',
+  greet: function() {
+    setTimeout(() => {
+      console.log(`Hello, ${this.name}!`);
+    }, 1000);
+  }
+};
+obj.greet(); // Output: Hello, John!
+```
+
+**Cannot be used as Constructors:**
+
+Arrow functions cannot be used as constructors to create objects with the **new** keyword. They lack the **[[Construct]]** method and will throw an error if attempted to be called with new.
+
 ### 4. What are callback functions?
 ### 5. When to use callback function in real application?
 ### 6. What is the use of event handling?
