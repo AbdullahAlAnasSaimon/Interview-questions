@@ -34,7 +34,6 @@ HTML stands for Hypertext Markup Language. It's a markup language used to create
 
 ### What is a ‘Marquee’ Tag in HTML?
 
-
 # JavaScript
 
 ## JavaScript fundamentals
@@ -47,11 +46,12 @@ Javascript is a programming language that is used for converting static web page
 
 ### 2. What are JavaScript Data Types?
 
-Data types are classifications of data that determine the type of values that can be assigned to variables, passed as arguments, and returned by functions. 
+Data types are classifications of data that determine the type of values that can be assigned to variables, passed as arguments, and returned by functions.
 
 There are two category of data type: **1.** Primitive data type, **2.** Non-primitive/Reference data type
 
-**Primitive data type:** Primitive data types are the most basic data types. Primitive data types are immutable and represents a single value. 
+**Primitive data type:** Primitive data types are the most basic data types. Primitive data types are immutable and represents a single value.
+
 1. String
 2. Number
 3. Boolean
@@ -61,17 +61,18 @@ There are two category of data type: **1.** Primitive data type, **2.** Non-prim
 7. Symbol
 
 **Non-primitive/Reference data type:** Non-primitive data types are complex and mutable data types. They store collection of values in a variable.
+
 1. Object
 2. Array
 
 ### 3. What is the difference between primitive and non-primitive data types?
 
-| Primitive    | Non-primitive |
-| -------- | ------- |
-| Primitive data types are string, number, boolean, null, undefined, symbol  | Non-primitive data types are object, array, function |
-| Primitive data types are immutable means their value can not be changed. | Non-primitive data types are mutable means their value can be changed.    |
-| Primitive data type represents only a single value    | Not-primitive data type represents multiple with collection of elements or a key value pair    |
-| Primitive data types are simple data types  | Non-primitive data types are complex (means we can do multiple operation) data types
+| Primitive                                                                 | Non-primitive                                                                               |
+| ------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| Primitive data types are string, number, boolean, null, undefined, symbol | Non-primitive data types are object, array, function                                        |
+| Primitive data types are immutable means their value can not be changed.  | Non-primitive data types are mutable means their value can be changed.                      |
+| Primitive data type represents only a single value                        | Not-primitive data type represents multiple with collection of elements or a key value pair |
+| Primitive data types are simple data types                                | Non-primitive data types are complex (means we can do multiple operation) data types        |
 
 ### 4. What are arrays, function and objects?
 
@@ -81,44 +82,47 @@ There are two category of data type: **1.** Primitive data type, **2.** Non-prim
 We can create arrays in JavaScript using array literal syntax ([]) or the Array constructor.
 
 ```javascript
-
 // Array literal syntax
-let fruits = ['apple', 'banana', 'orange'];
+let fruits = ["apple", "banana", "orange"];
 
 // Array constructor
-let cars = new Array('Toyota', 'Honda', 'Ford');
+let cars = new Array("Toyota", "Honda", "Ford");
 ```
+
 **Accessing Elements:**
 We can access elements in an array using square brackets ([]) notation with the index of the element.
 
 ```javascript
 console.log(fruits[0]); // Output: 'apple'
-console.log(cars[1]);   // Output: 'Honda'
+console.log(cars[1]); // Output: 'Honda'
 ```
+
 **Modifying Elements:**
 We can modify elements in an array by assigning a new value to a specific index.
 
 ```javascript
-
-fruits[2] = 'grape';
+fruits[2] = "grape";
 console.log(fruits); // Output: ['apple', 'banana', 'grape']
 ```
+
 **Array Methods:**
 JavaScript provides a variety of methods to manipulate arrays, such as **push(), pop(), shift(), unshift(), splice(), slice(), concat(), indexOf(), forEach(), map(), filter(), reduce()**, and many more.
 
 ```javascript
-fruits.push('kiwi'); // Add 'kiwi' to the end of the array
+fruits.push("kiwi"); // Add 'kiwi' to the end of the array
 console.log(fruits); // Output: ['apple', 'banana', 'grape', 'kiwi']
 
 fruits.pop(); // Remove the last element from the array
 console.log(fruits); // Output: ['apple', 'banana', 'grape']
 ```
+
 **Array Length:**
 We can determine the length of an array using the length property.
 
 ```javascript
 console.log(fruits.length); // Output: 3
 ```
+
 **Iterating Over Arrays:**
 We can iterate over arrays using loops such as for loop or array methods like forEach(), map(), filter(), etc.
 
@@ -127,7 +131,7 @@ for (let i = 0; i < fruits.length; i++) {
   console.log(fruits[i]);
 }
 
-fruits.forEach(function(fruit) {
+fruits.forEach(function (fruit) {
   console.log(fruit);
 });
 ```
@@ -141,16 +145,18 @@ You can define functions in JavaScript using either function declaration syntax 
 
 ```javascript
 function greet(name) {
-  console.log('Hello, ' + name + '!');
+  console.log("Hello, " + name + "!");
 }
 ```
+
 **Function Expression (Anonymous Function):**
 
 ```javascript
-let greet = function(name) {
-  console.log('Hello, ' + name + '!');
+let greet = function (name) {
+  console.log("Hello, " + name + "!");
 };
 ```
+
 **Function Parameters:**
 Functions can accept input parameters (arguments) that are specified within the parentheses following the function name. These parameters represent values that can be passed to the function when it is called.
 
@@ -159,13 +165,15 @@ function add(a, b) {
   return a + b;
 }
 ```
+
 **Calling Functions:**
 To execute a function and perform its defined task, you need to call (invoke) it by using its name followed by parentheses. If the function expects parameters, you provide values for those parameters inside the parentheses.
 
 ```javascript
-greet('Alice'); // Output: Hello, Alice!
+greet("Alice"); // Output: Hello, Alice!
 let result = add(3, 5); // result is assigned the value 8
 ```
+
 **Returning Values:**
 Functions can optionally return a value using the return statement. This allows the function to calculate a result or perform some operation and then pass that result back to the calling code.
 
@@ -175,6 +183,7 @@ function multiply(x, y) {
 }
 let product = multiply(2, 4); // product is assigned the value 8
 ```
+
 **Function Scope:**
 JavaScript functions have their own scope, meaning that variables declared inside a function are local to that function and are not accessible from outside the function (unless explicitly returned).
 
@@ -193,56 +202,61 @@ You can create objects in JavaScript using object literal syntax {} or the Objec
 
 ```javascript
 let person = {
-  name: 'John',
+  name: "John",
   age: 30,
-  city: 'New York'
+  city: "New York",
 };
 ```
+
 **Object Constructor:**
 
 ```javascript
 let person = new Object();
-person.name = 'John';
+person.name = "John";
 person.age = 30;
-person.city = 'New York';
+person.city = "New York";
 ```
+
 **Accessing Object Properties:**
 You can access properties of an object using dot notation (.) or bracket notation ([]).
 
 ```javascript
 console.log(person.name); // Output: 'John'
-console.log(person['age']); // Output: 30
+console.log(person["age"]); // Output: 30
 ```
+
 **Adding and Modifying Properties:**
 You can add new properties or modify existing properties of an object after its creation.
 
 ```javascript
-person.job = 'Engineer'; // Adding a new property
+person.job = "Engineer"; // Adding a new property
 person.age = 35; // Modifying an existing property
 ```
+
 **Nested Objects:**
 Objects can contain other objects as property values, allowing you to create nested or hierarchical data structures.
 
 ```javascript
 let car = {
-  make: 'Toyota',
-  model: 'Camry',
+  make: "Toyota",
+  model: "Camry",
   year: 2020,
   owner: {
-    name: 'Alice',
-    age: 25
-  }
+    name: "Alice",
+    age: 25,
+  },
 };
 ```
+
 **Object Methods:**
 In JavaScript, functions can also be properties of objects. When a function is a property of an object, it is called a method.
 
 ```javascript
 let person = {
-  name: 'John',
-  greet: function() {
-    console.log('Hello, ' + this.name + '!');
-  }
+  name: "John",
+  greet: function () {
+    console.log("Hello, " + this.name + "!");
+  },
 };
 person.greet(); // Output: 'Hello, John!'
 ```
@@ -258,18 +272,19 @@ JavaScript has two main types of scope:
 Variables declared outside of any function or block have global scope. Global variables are accessible from anywhere in the code, including inside functions and blocks. They are accessible throughout the entire script, but they can be shadowed by local variables.
 
 ```javascript
-let globalVar = 'I am global';
+let globalVar = "I am global";
 
 function foo() {
   console.log(globalVar); // Accessible
 }
 ```
+
 **Local Scope:**
 Variables declared inside a function or block have local scope. Local variables are only accessible within the function or block in which they are declared. They are not accessible outside of the function or block.
 
 ```javascript
 function bar() {
-  let localVar = 'I am local';
+  let localVar = "I am local";
   console.log(localVar); // Accessible
 }
 
@@ -281,22 +296,23 @@ Prior to ES6 (ECMAScript 2015), JavaScript only had function scope. With the int
 
 ```javascript
 if (true) {
-  let blockVar = 'I am block scoped';
+  let blockVar = "I am block scoped";
   console.log(blockVar); // Accessible
 }
 
 console.log(blockVar); // Error: blockVar is not defined
 ```
+
 ### 6. Difference between var and let keyword in javascript.
 
-| Feature	| var	| let	| const |
-| ------- | ------- | -------- | ------- |
-| Scope |	Function scope  | Block scope |	Block scope |
-|Hoisting |	Hoisted to the top of the function	|Hoisted to the top of the block	| Hoisted to the top of the block. |
-|Re-declaration	| Allowed |	Not allowed |	Not allowed |
-|Re-assignment |	Allowed |	Allowed |	Not allowed (unless the value is mutable)|
-|Initialization |	Optional | Optional | Required
-|Example |	``` var x = 10; if (true) { var y = 20; } console.log(x); console.log(y);``` |	```let x = 10; if (true) { let y = 20; }	console.log(x); console.log(y);```	|```const x = 10; if (true) { const y = 20; } console.log(x); console.log(y);```|
+| Feature        | var                                                                      | let                                                                    | const                                                                       |
+| -------------- | ------------------------------------------------------------------------ | ---------------------------------------------------------------------- | --------------------------------------------------------------------------- |
+| Scope          | Function scope                                                           | Block scope                                                            | Block scope                                                                 |
+| Hoisting       | Hoisted to the top of the function                                       | Hoisted to the top of the block                                        | Hoisted to the top of the block.                                            |
+| Re-declaration | Allowed                                                                  | Not allowed                                                            | Not allowed                                                                 |
+| Re-assignment  | Allowed                                                                  | Allowed                                                                | Not allowed (unless the value is mutable)                                   |
+| Initialization | Optional                                                                 | Optional                                                               | Required                                                                    |
+| Example        | ` var x = 10; if (true) { var y = 20; } console.log(x); console.log(y);` | `let x = 10; if (true) { let y = 20; }	console.log(x); console.log(y);` | `const x = 10; if (true) { const y = 20; } console.log(x); console.log(y);` |
 
 **Scope:**
 
@@ -342,6 +358,7 @@ for (let i = 0; i < 5; i++) {
   console.log(i);
 }
 ```
+
 **while Loop:**
 The while loop is used when the number of iterations is not known in advance, and the loop continues as long as the specified condition is true.
 
@@ -352,6 +369,7 @@ while (i < 5) {
   i++;
 }
 ```
+
 **do...while Loop:**
 The do...while loop is similar to the while loop, but it always executes the block of code at least once, even if the condition evaluates to false initially.
 
@@ -362,20 +380,22 @@ do {
   i++;
 } while (i < 5);
 ```
+
 **for...in Loop:**
 The for...in loop iterates over the enumerable properties of an object, including its prototype chain. It's commonly used to iterate over object keys.
 
 ```javascript
-const person = { name: 'John', age: 30 };
+const person = { name: "John", age: 30 };
 for (const key in person) {
-  console.log(key + ': ' + person[key]);
+  console.log(key + ": " + person[key]);
 }
 ```
+
 **for...of Loop:**
 The for...of loop is used to iterate over iterable objects such as arrays, strings, and other iterable objects introduced in ES6.
 
 ```javascript
-const colors = ['red', 'green', 'blue'];
+const colors = ["red", "green", "blue"];
 for (const color of colors) {
   console.log(color);
 }
@@ -399,14 +419,14 @@ Example: 0 === false evaluates to false because 0 and false are of different typ
 
 **Here's a comparison table to illustrate the differences:**
 
-|	Example |	Result |
-| ------- | ------- |
-|	0 == false | true |
-| 0 === false | false |
-|	"1" == 1|	true|	
-|	"1" === 1|	false|
-|null == undefined|	true|
-|	null === undefined|	false|
+| Example            | Result |
+| ------------------ | ------ |
+| 0 == false         | true   |
+| 0 === false        | false  |
+| "1" == 1           | true   |
+| "1" === 1          | false  |
+| null == undefined  | true   |
+| null === undefined | false  |
 
 => Js-02
 
@@ -423,6 +443,7 @@ function add(x, y) {
   return x + y;
 }
 ```
+
 **Anonymous Functions:**
 
 Anonymous functions are functions that do not have a name identifier.
@@ -434,6 +455,7 @@ const multiply = function(x, y) {
   return x * y;
 };
 ```
+
 **Arrow Functions (ES6):**
 
 Arrow functions are a concise way to write functions introduced in ES6.
@@ -466,6 +488,7 @@ function divide(x, y) {
   return x / y;
 }
 ```
+
 **Immediately Invoked Function Expressions (IIFE):**
 
 IIFEs are functions that are defined and invoked immediately.
@@ -481,7 +504,7 @@ Copy code
 **Generator Functions (ES6):**
 
 Generator functions are special types of functions that can pause and resume their execution.
-They are defined using the function* syntax and contain one or more yield expressions.
+They are defined using the function\* syntax and contain one or more yield expressions.
 
 ```javascript
 function* generateSequence() {
@@ -514,6 +537,7 @@ const functionName = (parameters) => {
   // Function body
 };
 ```
+
 **Or for single parameter and single statement:**
 
 ```javascript
@@ -528,6 +552,7 @@ const functionName = (param1, param2) => {
   // Function body
 };
 ```
+
 **Key features of arrow functions include:**
 
 **Concise Syntax:**
@@ -692,75 +717,184 @@ console.log(message); // Output: Hello, John!
 => Js-03
 
 ### 1. What are asynchronous operations?
+
+Asynchronous operations are tasks or processes that do not block the execution of other code and do not necessarily complete in the order they are initiated. JavaScript, being a single-threaded language, relies heavily on asynchronous programming to handle tasks such as fetching data from servers, performing I/O operations, or executing time-consuming computations without freezing the user interface.
+
+There are several mechanisms for handling asynchronous operations in JavaScript:
+
+**Callbacks:** Callback functions are a traditional way to handle asynchronous operations in JavaScript. You pass a function as an argument to another function, which will be invoked when the asynchronous operation completes or encounters an error.
+
+```javascript
+Copy code
+function fetchData(callback) {
+  setTimeout(function() {
+    callback("Data fetched successfully");
+  }, 1000);
+}
+
+fetchData(function(result) {
+  console.log(result);
+});
+```
+
+**Promises:** Promises provide a cleaner and more flexible way to work with asynchronous code. A Promise represents a value that may be available now, or in the future, or never. It allows chaining of asynchronous operations and handling success and error conditions separately.
+
+```javascript
+Copy code
+function fetchData() {
+  return new Promise(function(resolve, reject) {
+    setTimeout(function() {
+      resolve("Data fetched successfully");
+    }, 1000);
+  });
+}
+
+fetchData().then(function(result) {
+  console.log(result);
+}).catch(function(error) {
+  console.error(error);
+});
+```
+
+**Async/Await:** Introduced in ES2017, async/await provides a more synchronous-looking syntax for asynchronous code. It allows you to write asynchronous code that looks like synchronous code, making it easier to understand and maintain.
+
+```javascript
+async function fetchData() {
+  return new Promise(function (resolve) {
+    setTimeout(function () {
+      resolve("Data fetched successfully");
+    }, 1000);
+  });
+}
+
+async function getData() {
+  try {
+    const result = await fetchData();
+    console.log(result);
+  } catch (error) {
+    console.error(error);
+  }
+}
+
+getData();
+```
+
 ### 2. What are promise?
+
 ### 3. How to implement promise
+
 ### 4. When to use promises in real application?
+
 ### 5. What are classes and objects?
+
 ### 6. What is the purpose of this keyword?
+
 ### 7. What is hoisting?
 
-
 ### 2. What is the use of isNaN function?
+
 ### 5. Explain Implicit Type Coercion in javascript.
+
 ### 6. Is javascript a statically typed or a dynamically typed language?
+
 ### 7. What is NaN property in JavaScript?
+
 ### 8. Explain passed by value and passed by reference.
+
 ### 9. What do you mean by strict mode in javascript and characteristics of javascript strict-mode?
+
 ### 10. Explain Higher Order Functions in javascript?
+
 ### 11. What is an Immediately Invoked Function in JavaScript?
+
 ### 12. Explain “this” keyword.
+
 ### 13. What do you mean by Self Invoking Functions?
+
 ### 14. Explain call(), apply() and, bind() methods.
+
 ### 15. What is currying in JavaScript?
+
 ### 16. What are some advantages of using External JavaScript?
+
 ### 17. Explain Scope and Scope Chain in javascript.
+
 ### 18. Explain Closures in JavaScript.
+
 ### 19. Mention some advantages of javascript.
+
 ### 20. What are object prototypes?
+
 ### 21. What are callbacks?
+
 ### 22. What are the types of errors in javascript?
+
 ### 23. What is memoization?
+
 ### 24. What is recursion in a programming language?
+
 ### 25. What is the use of a constructor function in javascript?
+
 ### 26. What is DOM?
+
 ### 27. Which method is used to retrieve a character from a certain index?
+
 ### 28. What do you mean by BOM?
+
 ### 29. What is the distinction between client-side and server-side JavaScript?
+
 ### 30. What are arrow functions?
+
 ### 31. What do mean by prototype design pattern?
+
 ### 32. Differences between declaring variables using var, let and const.
+
 ### 33. What is the rest parameter and spread operator?
+
 ### 34. In JavaScript, how many different methods can you make an object?
+
 ### 35. What is the use of promises in javascript?
+
 ### 36. What are classes in javascript?
+
 ### 37. What are generator functions?
+
 ### 38. Explain WeakSet in javascript.
+
 ### 39. Why do we use callbacks?
+
 ### 40. Explain WeakMap in javascript.
+
 ### 41. What is Object Destructuring?
+
 ### 42. Difference between prototypal and classical inheritance
+
 ### 43. What is a Temporal Dead Zone?
+
 ### 44. What do you mean by JavaScript Design Patterns?
+
 ### 45. Is JavaScript a pass-by-reference or pass-by-value language?
+
 ### 46. Difference between Async/Await and Generators usage to achieve the same functionality.
+
 ### 47. What are the primitive data types in JavaScript?
+
 ### 48. What is the role of deferred scripts in JavaScript?
+
 ### 49. What has to be done in order to put Lexical Scoping into practice?
-
-
-
-
-
-
 
 ## JavaScript behind the process.
 
 ### 1. How JavaScript Works?
-### 2. What is Hoisting?
-### 3. What is Temporal Dead Zone?
-### 4. What is Event Loop?
-### 5. What is scope and what scopes are available in JavaScript?
-### 6. 
 
+### 2. What is Hoisting?
+
+### 3. What is Temporal Dead Zone?
+
+### 4. What is Event Loop?
+
+### 5. What is scope and what scopes are available in JavaScript?
+
+### 6.
 
 <!-- prettier-ignore-end -->
