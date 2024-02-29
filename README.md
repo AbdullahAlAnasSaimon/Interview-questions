@@ -781,6 +781,44 @@ getData();
 
 ### 2. What are promise?
 
+A promise is an object representing the eventual completion or failure of an asynchronous operation.
+
+A promise can be in one of three states:
+
+**Pending:** Initial state, neither fulfilled nor rejected.
+**Fulfilled:** Meaning that the operation completed successfully.
+**Rejected:** Meaning that the operation failed.
+Promises provide a cleaner and more organized way to handle asynchronous operations compared to traditional callback functions. They allow you to chain asynchronous operations together and handle errors more effectively through the use of .then() and .catch() methods.
+
+Here's a basic example of a promise in JavaScript:
+
+```javascript
+Copy code
+let myPromise = new Promise((resolve, reject) => {
+    // Perform an asynchronous operation
+    setTimeout(() => {
+        let success = true; // Simulate success
+        if (success) {
+            resolve("Operation completed successfully!");
+        } else {
+            reject("Operation failed!");
+        }
+    }, 2000); // Simulating a delay of 2 seconds
+});
+
+myPromise.then((message) => {
+    console.log("Success: " + message);
+}).catch((error) => {
+    console.log("Error: " + error);
+});
+```
+
+In this example:
+
+myPromise represents an asynchronous operation that simulates success after a delay.
+The Promise constructor takes a function as an argument, which has two parameters: resolve and reject. Inside this function, you perform your asynchronous operation and call resolve if it's successful or reject if it fails.
+The .then() method is called if the promise is fulfilled, and the .catch() method is called if the promise is rejected.
+
 ### 3. How to implement promise
 
 ### 4. When to use promises in real application?
