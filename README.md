@@ -848,7 +848,77 @@ Promises help in writing cleaner, more readable, and maintainable asynchronous c
 
 ### 5. What are classes and objects?
 
-### 6. What is the purpose of this keyword?
+### 6. What is the purpose of **"this"** keyword?
+
+The this keyword refers to the context in which a function is called. The purpose of this is to provide a reference to the object that is currently executing the code. The value of this depends on how a function is called and where it is called. Here are the main purposes of the this keyword:
+
+**Method Invocation:**
+Inside an object's method, this refers to the object itself. It allows methods to access and modify the object's properties.
+
+```javascript
+const obj = {
+  property: "value",
+  method: function () {
+    console.log(this.property); // Output: 'value'
+  },
+};
+
+obj.method();
+```
+
+**Constructor Invocation:**
+Inside a constructor function (a function used with the new keyword to create objects), this refers to the newly created instance of the object.
+
+```javascript
+function Person(name) {
+  this.name = name;
+}
+
+const person1 = new Person("Alice");
+console.log(person1.name); // Output: 'Alice'
+```
+
+**Explicit Function Binding:**
+You can explicitly bind this to a specific object using methods like call(), apply(), or bind().
+
+```javascript
+function greet() {
+  console.log(`Hello, ${this.name}!`);
+}
+
+const person = { name: "John" };
+
+greet.call(person); // Output: 'Hello, John!'
+```
+
+**Global Context:**
+In the global context (outside of any function or object), this refers to the global object (e.g., window in a web browser, global in Node.js).
+
+```javascript
+console.log(this === window); // Output in browser environment: true
+```
+
+**Event Handlers:**
+In event handlers, such as those attached to HTML elements, this usually refers to the element that triggered the event.
+
+```html
+<button onclick="console.log(this)">Click me</button>
+```
+
+**Arrow Functions:**
+Arrow functions do not have their own this context; instead, they lexically inherit this from the surrounding code.
+
+```javascript
+const obj = {
+  method: function () {
+    setTimeout(() => {
+      console.log(this === obj); // Output: true
+    }, 1000);
+  },
+};
+
+obj.method();
+```
 
 ### 7. What is hoisting?
 
