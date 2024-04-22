@@ -823,6 +823,29 @@ The .then() method is called if the promise is fulfilled, and the .catch() metho
 
 ### 4. When to use promises in real application?
 
+Promises are commonly used in real-world applications whenever you're dealing with asynchronous operations, such as fetching data from a server, reading files, or executing time-consuming tasks. Here are some scenarios where promises are particularly useful:
+
+**Fetching Data from APIs:**
+When making HTTP requests to APIs to fetch data, promises are used extensively. Promises allow you to handle the response (success or failure) in a clean and readable way.
+
+**File Operations:**
+When reading or writing files asynchronously, promises help in handling the asynchronous nature of these operations. For example, when reading a large file, you can use promises to process the file's contents once it's fully loaded.
+
+**Handling Events:**
+Promises can be used to handle events that may occur asynchronously, such as user interactions or responses from web sockets.
+
+**Executing Multiple Asynchronous Operations:**
+When you need to execute multiple asynchronous operations in parallel or sequentially and then perform some action after all operations are completed, promises are very handy. Promise.all() can be used to execute multiple promises concurrently, while chaining promises with .then() allows you to execute them sequentially.
+
+**Timeouts and Delays:**
+Promises can be used to implement timeouts or delays in asynchronous operations. For example, you might want to fetch data from a server, but if it takes too long, you want to display a message to the user.
+
+**Error Handling:**
+Promises provide a consistent and standardized way to handle errors in asynchronous code using the .catch() method. This makes error handling more manageable and readable.
+
+**Code Readability and Maintainability:**
+Promises help in writing cleaner, more readable, and maintainable asynchronous code compared to using nested callbacks. They allow you to write asynchronous code in a more synchronous-like manner, making it easier to understand the flow of control.
+
 ### 5. What are classes and objects?
 
 ### 6. What is the purpose of this keyword?
